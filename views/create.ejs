@@ -1,0 +1,21 @@
+<html lang="en">
+<%- include("./partials/head.ejs") %>
+
+<body>
+  <%- include("./partials/nav.ejs") %>
+
+  <div class="create-blog content">
+    <form action="/users" method="POST">
+      <label for="name">User Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="age">User Age:</label>
+      <input type="text" id="age" name="age" required>
+      <label for="university">User University:</label>
+      <textarea id="university" name="university" required></textarea>
+      <button>Submit</button>
+    </form>
+  </div>
+
+  <%- include("./partials/footer.ejs") %>
+</body>
+</html>
